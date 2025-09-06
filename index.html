@@ -1,19 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORTFOLIO</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/svg+xml" sizes="16x16" href="favicon-16x16.svg">
-    <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon-32x32.svg">
-    <link rel="alternate icon" href="favicon.ico">
+    <title>ポートフォリオ | Web Developer</title>
+    <meta name="description" content="フルスタックWebデベロッパーのポートフォリオサイト。React、TypeScript、Spring Boot等を使用したWebアプリケーションを開発しています。" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="favicon-16x16.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon-32x32.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h3>Hello World!!</h3>
-    <a href="https://koninico.github.io/socialtech/index.html">コーポレートサイト</a>
-    <a href="https://koninico.github.io/pokemonapp/index.html">ポケモン図鑑</a>
-    <a href="https://koninico.github.io/blog-with-react-and-firebase/">ブログ</a>
-    <a href="https://koni-springboot-posting-app-62d9077a69cc.herokuapp.com/login">Todoアプリheroku</a>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="profile-img">K</div>
+          <h1>Koni Portfolio</h1>
+          <p class="subtitle">Web Developer</p>
+          <p class="description">
+            フルスタックWebデベロッパーとして、モダンな技術を使用してユーザーフレンドリーなWebアプリケーションを開発しています。
+            React、TypeScript、Spring Boot等の技術を活用し、高品質なソフトウェアソリューションの提供を目指しています。
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- Corporate Website -->
+          <div class="project-card">
+            <div class="project-icon">🏢</div>
+            <h3>コーポレートサイト</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <p class="description">
+              モダンなデザインと直感的なユーザーインターフェースを持つコーポレートウェブサイト。
+              レスポンシブデザインを採用し、様々なデバイスで最適な表示を実現。
+            </p>
+            <a href="https://koninico.github.io/socialtech/index.html" class="project-link" target="_blank" rel="noopener">
+              プロジェクトを見る
+            </a>
+          </div>
+
+          <!-- Pokemon App -->
+          <div class="project-card">
+            <div class="project-icon">🎮</div>
+            <h3>ポケモン図鑑</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <p class="description">
+              PokeAPIを活用したインタラクティブなポケモン図鑑アプリケーション。
+              検索機能やフィルタリング機能を実装し、豊富なポケモン情報を提供。
+            </p>
+            <a href="https://koninico.github.io/pokemonapp/index.html" class="project-link" target="_blank" rel="noopener">
+              プロジェクトを見る
+            </a>
+          </div>
+
+          <!-- Blog App -->
+          <div class="project-card">
+            <div class="project-icon">📝</div>
+            <h3>ブログアプリ</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Authentication</span>
+            </div>
+            <p class="description">
+              ReactとFirebaseを使用したモダンなブログアプリケーション。
+              ユーザー認証、リアルタイムデータベース、記事の作成・編集機能を実装。
+            </p>
+            <a href="https://koninico.github.io/blog-with-react-and-firebase/" class="project-link" target="_blank" rel="noopener">
+              プロジェクトを見る
+            </a>
+          </div>
+
+          <!-- Todo App -->
+          <div class="project-card">
+            <div class="project-icon">✅</div>
+            <h3>Todoアプリ</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Heroku</span>
+              <span class="tech-tag">Database</span>
+            </div>
+            <p class="description">
+              Spring Bootを使用したフル機能のTodoアプリケーション。
+              ユーザー認証、CRUD操作、データ永続化をサーバーサイドで実装。
+              Herokuにデプロイし、本格的なWebアプリケーションとして公開。
+            </p>
+            <a href="https://koni-springboot-posting-app-62d9077a69cc.herokuapp.com/login" class="project-link" target="_blank" rel="noopener">
+              プロジェクトを見る
+            </a>
+          </div>
+
+          <!-- Household Account Book -->
+          <div class="project-card">
+            <div class="project-icon">💰</div>
+            <h3>家計簿アプリ</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Responsive</span>
+            </div>
+            <p class="description">
+              TypeScriptとReactを使用した型安全な家計簿アプリケーション。
+              収支管理、カテゴリー分類、グラフによる可視化機能を実装。
+              モダンなUIとUXを重視した設計。
+            </p>
+            <a href="https://koninico.github.io/react-household-account-book" class="project-link" target="_blank" rel="noopener">
+              プロジェクトを見る
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" style="background-color: #f7fafc;">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          
+          <div class="skill-category">
+            <h3>フロントエンド</h3>
+            <div class="skill-list">
+              <span class="skill-item">React</span>
+              <span class="skill-item">TypeScript</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">HTML5</span>
+              <span class="skill-item">CSS3</span>
+              <span class="skill-item">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>バックエンド</h3>
+            <div class="skill-list">
+              <span class="skill-item">Java</span>
+              <span class="skill-item">Spring Boot</span>
+              <span class="skill-item">Node.js</span>
+              <span class="skill-item">API開発</span>
+              <span class="skill-item">Database</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>ツール・技術</h3>
+            <div class="skill-list">
+              <span class="skill-item">Git</span>
+              <span class="skill-item">GitHub</span>
+              <span class="skill-item">Firebase</span>
+              <span class="skill-item">Heroku</span>
+              <span class="skill-item">VS Code</span>
+              <span class="skill-item">REST API</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p style="margin-bottom: 30px; opacity: 0.9;">
+          新しいプロジェクトやお仕事の機会についてお気軽にお声がけください。
+        </p>
+        <div class="contact-info">
+          <a href="https://github.com/koninico" class="contact-item" target="_blank" rel="noopener">
+            <span>🔗</span>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:your.email@example.com" class="contact-item">
+            <span>📧</span>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <p>&copy; 2024 Koni Portfolio. All rights reserved.</p>
+      </div>
+    </div>
+
   </body>
 </html>
